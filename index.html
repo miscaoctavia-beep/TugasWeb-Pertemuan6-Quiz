@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="quiz">
+    <header class="quiz__header">
+      <h1>🧠 Interactive Quiz</h1>
+      <p>Uji pengetahuanmu dengan menjawab semua pertanyaan!</p>
+    </header>
+
+    <section class="quiz__progress">
+      <span id="question-number">Pertanyaan 1 dari 5</span>
+      <div class="progress">
+        <div id="progress-bar" class="progress__bar"></div>
+      </div>
+    </section>
+
+    <section id="quiz-container" class="quiz__container">
+      <h2 id="question">Pertanyaan akan muncul di sini</h2>
+
+      <div id="answers" class="quiz__answers"></div>
+
+      <p id="feedback" class="quiz__feedback"></p>
+
+      <button id="next-btn" class="quiz__button" type="button">
+        Pertanyaan Berikutnya
+      </button>
+    </section>
+
+    <section id="result" class="quiz__result hidden">
+      <h2>🎉 Quiz Selesai!</h2>
+      <p>Skor kamu:</p>
+      <strong id="score">0</strong>
+      <p id="high-score"></p>
+
+      <button id="restart-btn" class="quiz__button" type="button">
+        Ulangi Quiz
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
